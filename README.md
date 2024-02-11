@@ -13,7 +13,7 @@ This Python script provides a detailed, side-by-side comparison of two text file
 ## Usage
 
 Basic command structure:
-python cdiff.py <file1> <file2> [options]
+python worddiff.py <file1> <file2> [options]
 
 
 Options include:
@@ -23,7 +23,7 @@ Options include:
 - `--underline`: Enable underline for differences.
 - Additional options for setting colors and headers.
 
-For detailed usage and all options, run `python cdiff.py --help`.
+For detailed usage and all options, run `python worddiff.py --help`.
 
 ## Configuration
 
