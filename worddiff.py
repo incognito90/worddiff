@@ -126,8 +126,7 @@ def main():
     args = parser.parse_args()
 
     # Apply configuration and defaults
-    tmp = get_config_value('fixed_width', args.fixed_width, DEFAULT_CONFIG['fixed_width'])
-    fixed_width = int(calculate_fixed_width(tmp))
+    fixed_width = int(calculate_fixed_width(get_config_value('fixed_width', args.fixed_width, DEFAULT_CONFIG['fixed_width'])))
     color = get_config_value('color', args.color, DEFAULT_CONFIG['color'])
     underline = get_config_value('underline', args.underline, DEFAULT_CONFIG['underline'])
     replace_colors = parse(get_config_value('replace_color', args.replace_color, DEFAULT_CONFIG['replace_color']))
